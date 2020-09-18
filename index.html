@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h3 class="title">Checkout</h3>
+      <div class="content-container">
+        <div class="left-div">
+          <form class="form" action="">
+            <p class="left-div-p">Contact Information</p>
+
+            <div class="input-boxes">
+              <label for="email"> Email</label>
+              <div class="input-icons">
+                <i class="fa fa-envelope icon"> </i>
+                <input
+                  class="input-field"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+            </div>
+            <div class="input-boxes">
+              <label for="phone"> Phone</label>
+              <div class="input-icons">
+                <i class="fas fa-phone-alt icon"></i>
+                <input
+                  class="input-field"
+                  type="text"
+                  placeholder="Enter your phone"
+                />
+              </div>
+            </div>
+            <br />
+            <br />
+            <p class="left-div-p">Shipping Address</p>
+            <div class="input-boxes">
+              <label for="fname"> Full name</label>
+              <div class="input-icons">
+                <i class="fa fa-user icon"> </i>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="fullname"
+                  placeholder="Enter your Full name"
+                />
+              </div>
+            </div>
+            <div class="input-boxes">
+              <label for="address"> Address</label>
+              <div class="input-icons">
+                <i class="fa fa-home icon"> </i>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="address"
+                  placeholder="Enter your address"
+                />
+              </div>
+            </div>
+            <div class="input-boxes">
+              <label for="city"> City</label>
+              <div class="input-icons">
+                <i class="fas fa-city icon"></i>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="city"
+                  placeholder="Enter your city"
+                />
+              </div>
+            </div>
+            <div class="country-postcode-boxes">
+              <div class="input-boxes">
+                <label for="country"> Country</label>
+                <br />
+                <div class="input-icons">
+                  <i class="fas fa-globe-europe icon"></i>
+                  <select class="input-field" name="country">
+                    <option value="0">Turkey</option>
+                    <option value="1">Germany</option>
+                    <option value="2">USA</option>
+                    <option value="3">Canada</option>
+                    <option value="4">UK</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-boxes">
+                <label for="postcode"> Post Code</label>
+                <br />
+                <div class="input-icons">
+                  <i class="fas fa-mail-bulk icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="postcode"
+                    placeholder="Enter your postal code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" name="reminder" id="user-reminder" />
+              <label for="reminder">See this information next time</label>
+            </div>
+          </form>
+        </div>
+        <div class="right-div">
+          <div class="product-container">
+            <div class="product">
+              <img src="./IMG/photo1.png" alt="Backbag" />
+              <div class="product-info">
+                <h3>Vintage Backbag</h3>
+                <p>
+                  <strong>$54.99</strong>
+                  <span class="line-through">$94.99</span>
+                </p>
+
+                <div class="quantity">
+                  <button class="quantity-button">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <p>1</p>
+                  <button class="quantity-button">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <img src="./IMG/photo2.png" alt="sHOES" />
+              <div class="product-info">
+                <h3>Levi Shoes</h3>
+                <p>
+                  <strong>$74.99</strong>
+                  <span class="line-through">$124.99</span>
+                </p>
+                <div class="quantity" >
+                  <button class="quantity-button" id="levi-quantity">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <p>1</p>
+                  <button class="quantity-button">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <br><br><br>
+            <div class="final-price">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div class="final-price">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="continue">
+        <input
+          type="submit"
+          name="continue"
+          id="continue-btn"
+          value="Continue"
+        />
+      </div>
+    </div>
+  </body>
+</html>
